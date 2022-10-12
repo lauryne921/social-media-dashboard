@@ -157,6 +157,10 @@ body.active {
     margin-right: 0.6246rem;
 }
 
+.second-grid .icon-arrow {
+  margin-top: 2.25rem;
+}
+
 .views {
   display: flex;
   justify-content: space-between;
@@ -169,9 +173,10 @@ body.active {
     margin: 1.25rem 1.5rem 0rem 1rem;
   }
 
-  .icon-overview {
+.icon-overview {
     height: 1.35rem;
     width: auto;
+    margin-top: 1.25rem;
 }
 
 .views p {
@@ -193,6 +198,7 @@ body.active {
 
 .div-up-p {
     margin-top: 1.872rem;
+    padding-right: 1rem;
 }
 
 .div-up-icon {

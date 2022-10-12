@@ -110,6 +110,7 @@ body.active {
     display: inline-block;
     text-align: center;
     border-radius: 0.625rem;
+    padding-rigth: 1rem;
 }
 
 .grid:hover {
@@ -374,19 +375,27 @@ body.active {
     .div-up {
         display: inline-flex;
         color: hsl(163, 72%, 41%);
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     .div-down {
         display: inline-flex;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     .icon-arrow {
         height: 1.5vw;
         width: auto;
-        margin-top: 4vw;
-        margin-right: 1.5vw;
+        margin-top: 8vw;
+    }
+
+    .first-grid .icon-arrow {
+      margin-right: 0vw;
+    }
+
+    .second-grid .icon-arrow {
+      margin-top: 4vw;
+      margin-right: 2vw;
     }
     
     .views {
@@ -399,6 +408,7 @@ body.active {
         width: auto;
         right: 0%;
         margin-right: 3vw;
+        margin-top: 3vw;
     }
     
     .number-up {
@@ -408,6 +418,7 @@ body.active {
     
     .div-up-p {
         margin-top: 2.083vw;
+        font-size: 4vw;
     }
     
     .div-up-icon {

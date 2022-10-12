@@ -1,21 +1,14 @@
-let btn = document.getElementById('btn-submit');
+let body = document.querySelector('body'); 
 
-let cardOne = document.getElementById('card1'); 
-let cardTwo = document.getElementById('card2'); 
+let toggle = document.getElementById('toggle');
 
-let btnTwo = document.getElementById('btn-submit2');
+let grids = document.getElementsByClassName('grid');
 
+let pattern = document.getElementById('pattern');
 
-
-[btn, btnTwo].forEach(element=>element.addEventListener("click", function () {
-    let cardOne = document.getElementById('card1'); 
-    let cardTwo = document.getElementById('card2'); 
-    cardOne.classList.toggle("hidden");
-    cardTwo.classList.toggle("hidden");
-}));
-
-
-[...document.querySelectorAll("input[name='btn-number']")].forEach(element=>element.addEventListener("change", function (e) {
-    const radioValue = e.target.value;
-    document.querySelector('#choice-message #rating').innerText = radioValue;
-}));
+toggle.onclick = function () {
+    toggle.classList.toggle('active');
+    body.classList.toggle('active');
+    [...grids].forEach(element => element.classList.toggle('active')); 
+    pattern.classList.toggle('active');
+}
